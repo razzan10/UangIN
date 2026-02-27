@@ -51,7 +51,7 @@ const Home = async() => {
           <Button variant="outline" size="sm" className="capitalize">add new</Button>
           </Link>
         </div>
-        <DataTable/>
+        <DataTable id={0} type={""} amount={0} desc={""} />
 
       </div>
     </div>
