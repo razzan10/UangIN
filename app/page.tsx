@@ -5,6 +5,10 @@ import pfp from "@/public/randomImage.jpg"
 import Image from "next/image"
 import { getGreeting } from "@/lib/getGreeting"
 import { UserData } from "@/data/userData"
+import DataTable from "@/components/data-table"
+import { Button } from "@/components/ui/button"
+import {Plus} from "lucide-react"
+import Link from "next/link"
 
 const Home = async() => {
 
@@ -40,7 +44,14 @@ const Home = async() => {
         </div>
 
         {/* Table-like content */}
-        
+        <div>
+          <Link
+          href="/reports"
+          >
+          <Button variant="outline" size="sm" className="capitalize">add new</Button>
+          </Link>
+        </div>
+        <DataTable/>
 
       </div>
     </div>

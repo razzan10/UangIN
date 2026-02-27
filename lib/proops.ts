@@ -6,3 +6,10 @@ export interface TypingTextProops{
     delayAfterDelete?: number
     className?: string
 }
+
+export interface spendingData{
+    id: number,
+    type: string,
+    amount: number,
+    desc: string
+}
