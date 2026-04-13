@@ -29,8 +29,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <Link rel="manifest" href="../public/manifest.json"/>
-        <meta name="theme-color" content="#000000"/>
+        <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="UangIN" />
+        <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
       </Head>
       <body
         className={`${poppins.variable} font-sans antialiased bg-linear-to-r from-gray-950 via-purple-950 to-gray-950`}
